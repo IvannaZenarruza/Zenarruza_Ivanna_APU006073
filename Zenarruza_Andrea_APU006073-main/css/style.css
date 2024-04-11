@@ -1,0 +1,666 @@
+/* Estilado para todos los .html */
+body {
+    margin: 0%;
+    padding: 0%;
+    background-image: url(/Zenarruza_Andrea_APU006073-main/images/background.jpeg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px);
+    font-family: "Monserrat", sans-serif;
+}
+
+/* Estilado para todos los h1 */
+h1 {
+    font-family: "Poppins";
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+h2,
+p {
+    margin: 0;
+}
+
+/* Estilado para todos los h3 */
+h3 {
+    font-family: "Poppins";
+    margin-top: 10px;
+    text-align: center;
+    color: #013a63;
+    font-weight: bolder;
+}
+
+/* Estilado para todos las tablas*/
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: #cde8f5;
+    background-color: #155981;
+}
+
+/* Estilado para celda de datos de la tabla */
+td {
+    border: 1px solid #cde8f5;
+    padding: 10px;
+}
+
+td a {
+    color: #cde8f5;
+}
+
+/* --------------------------------header y barra de navegacion principal--------------------------------- */
+
+/* Estilado de la barra de navegacion en el header*/
+header nav {
+    background-color: #013a63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0%;
+    font-family: "Monserrat";
+}
+/* Estilado de barra de navegacion */
+nav {
+    margin: 0;
+    padding: 0;
+}
+/* Estilado de la under list de la barra de navegacion */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+/* Estilado para la barra de navegacion */
+.navegation {
+    display: flex;
+}
+.navegation div {
+    margin-right: 10px;
+    padding-inline-end: 20px;
+    font-family: "Montserrat";
+}
+
+.navegation div:last-child {
+    margin-right: 30px;
+}
+
+.navegation a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+/* Animacion que cambia de color cuando el cursor está encima */
+.navegation a:hover {
+    background-color: #000000;
+}
+
+/* Estilado para el logo del poder judicial */
+.logo img {
+    height: 20%;
+    width: 20%;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo span {
+    padding: 20px;
+    font-family: "Montserrat";
+    font-weight: bold;
+    color: #e0e1dd
+}
+
+/* ---------------------------------------------index.html------------------------------------------------ */
+
+/* Contenedor de las tarjetas, pagina principal */
+.cardBoxOne {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    text-align: center;
+}
+/* Tarjeta de la pagina principal */
+.cardOne {
+    width: 300px;
+    height: 280px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #cde8f5;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+/* Conetendor de las imágenes de la cardOne */
+.cardImageOne {
+    display: flex;
+    border-radius: 70%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    position: relative;
+    align-items: center;
+    top: -50px;
+}
+/* Estilado de las imagenes de la cardOne */
+.imageContainerOne {
+    height: 60px;
+    float: left;
+    overflow: visible;
+}
+/* Margen inferior del titulo y del texto de la cardOne */
+.cardTitleOne,
+.cardTextOne {
+    margin-bottom: 10px;
+}
+
+/* Tarjeta del boton <<Ver más>> perteneciente a la CardOne */
+.cardBottomOne {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: #468faf;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+/* Animacion de la imagen de la cardOne */
+.imageContainerOne:hover .cardImageOne {
+    /* Cuando el cursor se coloca encima de la imagen, esta se sacude lemente por 0.5 seg */
+    animation: shake 0.5s infinite alternate;
+}
+@keyframes shake {
+    /* En el inicio de la animación el elemento no se mueve*/
+    0% {
+        transform: translate(0, 0);
+    }
+    /* Al final de la animación el elemento se mueve 10 píxeles hacia la derecha y 5 píxeles hacia abajo */
+    100% {
+        transform: translate(10px, 5px);
+    }
+}
+
+/* ----------------------------------------------form.html-------------------------------------------------- */
+
+/* Estilado del fondo de la pagina web del formulario */
+.backgroundForm {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #fff, #cde8f5, #61a9c8, #013a63, #61a9c8, #93bdcf, #cde8f5, #cde8f5, #fff);
+    font-family: "Poppins";
+}
+/* Tarjeta del boton <<Enviar>> */
+.cardBottomTwo {
+    background-color: #013a63;
+    border: none;
+    color: #cde8f5;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    padding: 10px;
+    transition-duration: 0.4s;
+}
+/* Animacion del boton <<Enviar>> */
+.cardBottomTwo:hover {
+    background-color: #1079b6;
+    color: #e0e0e0;
+    transform: scale(1.1);
+}
+
+/* ----------------------------------------------news.html-------------------------------------------------- */
+
+/* Contenedor de las cards y la barra de busqueda*/
+.cardBoxTwo {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* Barra de navegacion lateral */
+.sidebarBusq {
+    width: 200px;
+    height: 615px;
+    background-color: #f0f0f0;
+}
+.search {
+    padding: 10px;
+}   
+/* Estilado del campo de busqueda */
+.search input {
+    width: 80%;
+    margin-right: 10px;
+}
+.search button {
+    width: 20%;
+}
+/* Links de la barra de navegacion lateral */
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.links li {
+    padding: 10px;
+}
+.links a {
+    color:#155981;
+}
+/* Contenedor de las tarjetas de noticias */
+.cardTwo {
+    width: 500px;
+    background-color: #cde8f5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+/* Contenedor de las imagenes de cardTwo */
+.cardImageTwo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    display: block;
+    width: auto;
+}
+/* Estilado y animacion de las imagenes de cardTwo */
+.cardImageTwo img {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    transition-duration: 0.6s;
+}
+/* Animacion de las imagenes */
+.cardImageTwo:hover img {
+    transform: scale(1.1);
+}
+.cardTextTwo {
+    padding: 10px;
+}
+.cardTitleTwo {
+    font-size: 20px;
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+}
+.cardTextTwo p {
+    margin-left: 0;
+}
+
+/* ------------------------------------------------webpage.html----------------------------------------------- */
+
+/* Estilado de la tabla con links  */
+.tableTwo {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 50px;
+    color: transparent;
+    background-color:transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableTwo li{
+    font-family: "Montserrat";
+    text-align: center;
+    font-weight: bolder;
+}
+.tableTwo a{
+    color: #013a63;
+}
+menu li {
+    float: left;
+    margin-right: 10px;
+}
+
+menu li:last-child {
+    margin-right: 0;
+}
+
+menu a {
+    display: block;
+    color:black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu li:hover {
+    background-color: #61a9c8;
+}
+/* Imagen de fondo debajo de tableTwo */
+.backgroundImage {
+    background-image: url(/Zenarruza_Andrea_APU006073-main/images/power.jpg);
+    height: 200px;
+    margin: 0%;
+    padding: 0%;
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal, contiene la barra de navegacion*/
+.containerWebPage {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+/* Estilado de la barra de navegacion */
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px;
+}
+.sidebarCard {
+    margin-bottom: 20px;
+}
+
+.sidebarCard h7 {
+    margin-bottom: 10px;
+}
+
+.sideCardContent img {
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Contenedor de las cards y el carrusel */
+.carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+/* Tarjeta con noticias */
+.cardCarrousel {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    animation: slide 10s linear infinite;
+    margin: 20px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    border-radius: 20px;
+}
+/* Imagen de la tarjeta */
+.cardCarrousel img {
+    width: 350px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+.cardCarrousel h3 {
+    margin-top: 0;
+}
+.text-content {
+    height: 10px;
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 20px;
+}
+.text {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* Carrousel de imagenes Suprema corte de Justicia */
+.carouselOne-container {
+    margin: 20px;
+    overflow: hidden;
+    max-width: 800px;
+    height: auto;
+    position: relative;
+}
+
+.carouselOne img {
+    width: 800px;
+    height: 470px;
+    display: flex;
+    overflow: hidden;
+    animation: slide 10s linear infinite;
+}
+
+.carouselOne {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carouselOne-item {
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+       100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* ----------------------------------------------aboutMe.html----------------------------------------------- */
+
+/* Contenedor de la tarjeta de presentacion */
+
+.containerBlog{
+    display: flex;
+    justify-content: center;
+}
+
+.cardBlog {
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: baseline;
+}
+
+.cardBlog img {
+    width: 20%;
+    border-radius: 20px;
+}
+
+.cardBlog .contentBlog {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor de tarjetas acerca de <<Diseño>> y <<Emprender>>  */
+.containerBlogDesign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+/* Tarjetas de <<Diseño>> y <<Emprender>> */
+.cardBlog1,
+.cardBlog2 {
+    width: 38%;
+    background-color: #93bdcf;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* Contenedores de las tarjetas */
+.containerBlog1,
+.containerBlog2 {
+    width: auto;
+    height: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+/* Imagen de los contenedores */
+.containerBlog1 img,
+.containerBlog2 img {
+    display: inline-block;
+    width: 50%;
+    height: 300px;
+    transition: transform 0.3s ease;
+}
+
+.containerBlog1 img,
+.containerBlog2 img {
+    transform: scale(1.2);
+}
+
+.contentBlog1 p,
+.contentBlog2 p {
+    margin: 20px;
+    font-size: "Monserrat";
+}
+
+.cardBlog,
+.contentBlog h2,
+.contentBlog1 h2,
+.contentBlog2 h2 {
+    margin-top: 5px;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+.cardBlog1,
+.cardBlog2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardBlog1 {
+    margin-right: 60px;
+}
+.cardBlog2 {
+    height: 500px;
+}
+/* Contenedor de <<Fotografia>> */
+.containerBlog3 {
+    width: 400px;
+    height: 300px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.containerBlog3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.containerBlog3:hover img {
+    transform: scale(1.2);
+}
+/* Estilado del footer */
+footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.columna {
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.columna:last-child {
+    margin-right: 0;
+}
+
+.columna h5 {
+    color: #61a9c8;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+.columna ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.columna ul li {
+    margin: 20px;
+}
+
+.columna ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.columna img {
+    max-width: 50%;
+    margin: 10px;
+    height: auto;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* -----------------------------------------------pageError.html-------------------------------------------- */
+
+.error {
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
