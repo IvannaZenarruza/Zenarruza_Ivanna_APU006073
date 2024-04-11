@@ -2,7 +2,7 @@
 body {
     margin: 0%;
     padding: 0%;
-    background-image: url(/Zenarruza_Andrea_APU006073-main/images/background.jpeg);
+    background-image: url(../images/background.jpeg);
     background-size: cover;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -366,7 +366,7 @@ menu a {
 }
 /* Imagen de fondo debajo de tableTwo */
 .backgroundImage {
-    background-image: url(/Zenarruza_Andrea_APU006073-main/images/power.jpg);
+    background-image: url(../images/power.jpg);
     height: 200px;
     margin: 0%;
     padding: 0%;
